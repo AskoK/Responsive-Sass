@@ -1,0 +1,50 @@
+
+/******   CONTACT   ******/
+/******	  bottom	******/
+
+
+.contact-page {
+	 margin-top: 30px;
+	 color: $color-text-heading;
+
+}
+
+.contact-header {
+	@extend %centered;
+	font-size: $font-size-075em;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+
+.contact-info {
+	@extend %centered;
+	margin-bottom: 20px;
+}
+
+.contact-info a {
+	@extend %decoration;
+	color: $color-text-main;
+	font-weight: 600;
+	margin-left: 15px;
+	margin-right: 40px;
+
+}
+
+.contact-info li {
+	list-style: none;
+	font-size: $font-size-09em;
+	color: $color-text-main;
+	margin-top: 20px;
+
+}
+
+.contact-page li {
+	@media #{$brk-narrow} {
+		font-size: 1em;
+	}
+
+	@media #{$brk-wide} {
+		font-size: .9em;
+	}
+}

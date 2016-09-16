@@ -1,0 +1,27 @@
+
+/***** Profile picture *****/
+/*****                 *****/
+
+
+.profile-icon {
+	height: 125px;
+	width: 200px;
+	padding-top: 30px;
+	display: block;
+	margin: 0 auto;
+
+	@media #{$brk-narrow} {
+		float: right;
+		margin-right: 20px;
+		width: 37%;
+		margin-top: 10px;
+		height: 70%;
+	}
+
+	@media #{$brk-wide} {
+		float: right;
+	 	clear: both;
+	 	margin-top: 35px;
+	 	margin-right: 50px;
+	}
+}

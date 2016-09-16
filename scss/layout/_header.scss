@@ -1,0 +1,89 @@
+
+/***** NAVIGATION *****/
+/*****            *****/
+
+
+.main-nav li {
+	list-style: none;
+	margin-left: -40px;
+
+	@media #{$brk-narrow} {
+		display: inline-block;
+		text-align: center;
+		float: none;
+		width: 125px;
+	}
+
+	@media #{$brk-wide} {
+		float: left;
+	 	margin-top: 20px;
+	 	margin-right: 20px;
+	}
+}
+
+
+.main-nav {
+	@media #{$brk-narrow} {
+		text-align: center;
+	}
+
+	@media #{$brk-wide} {
+		float: right;
+	}
+}
+
+.main-header h1 {
+	@media #{$brk-narrow} {
+		padding-top: 40px;
+		margin-bottom: -10px;
+	}
+
+	@media #{$brk-wide}{
+		float: left;
+	}
+}
+
+
+header {
+	@media #{$brk-narrow} {
+		padding-bottom: 30px;
+	}
+}
+
+
+.main-nav a {
+	@extend %centered;
+	@extend %decoration;
+	background-color: $color-background;
+	font-weight: 600;
+	color: $color-text-heading;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: $font-size-075em;
+	margin-left: -20px;
+	width: 280px;
+	display: block;
+	margin: auto;
+	margin: auto;
+	margin-top: 5px;
+
+	@media #{$brk-narrow} {
+		background-color: transparent;
+		text-align: center;
+		width: 100px;
+		margin-bottom: -20px;
+		font-size: .9em;
+	}
+
+	@media #{$brk-wide} {
+		padding: 0;
+	 	margin-top: 40px;
+	 	font-size: .9em;
+	}
+}
+
+
+
+
+
+
