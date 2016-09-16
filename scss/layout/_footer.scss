@@ -8,13 +8,13 @@
 	border-top: 2px solid #F1F1F1;
 	padding-top: 20px;
 
-	@media #{$brk-narrow} {
+	@include tablet {
 		margin-right: 25px;
 		margin-left: 25px;
 		margin-bottom: 60px;
 	}
 
-	@media #{$brk-wide} {
+	@include desktop {
 		margin-left: 60px;
 		margin-right: 60px;
 		margin-bottom: 0;
@@ -27,8 +27,8 @@
 	color: $color-text-heading;
 	font-size: $font-size-1em;
 
-	@media #{$brk-wide} {
-	font-size: 1.1em;
+	@include desktop {
+	font-size: $font-size-1-1em ;
 	}		
 } 
 
@@ -36,7 +36,7 @@
 .main-footer h3 {
 	margin-top: -60px;
 
-	@media #{$brk-narrow} {
+	@include tablet {
 		margin: 0;
 		margin-top: 20px;
 		margin-bottom: 70px;
@@ -45,12 +45,12 @@
 
 .main-footer {
 	a {
-		float: right;
+		@extend %floatright;
 		font-size: $font-size-08em;
 		margin-top: -31px;
 		font-weight: 600;
 
-		@media #{$brk-narrow} {
+		@include tablet {
 			margin-top: 5px;
 			margin-bottom: 15px;
 		}
@@ -64,13 +64,13 @@
  #bottom-navigation {
 	visibility: hidden;
 
-	@media #{$brk-narrow} {
-		float: right;
+	@include tablet {
+		@extend %floatright;
 	}
 } 
 
 #bottom-navigation li {
-	@media #{$brk-narrow} {
+	@include tablet {
 		visibility: visible;
 		list-style: none;
 		display: inline-block;
@@ -78,8 +78,8 @@
 }
 
 #bottom-navigation a {
-	@media #{$brk-narrow} {
-		font-size: .8em;
+	@include tablet {
+		font-size: $font-size-08em;
 		font-weight: 600;
 		padding-left: 10px;
 	}	
@@ -87,7 +87,7 @@
 
 
 #mobile-footer {
-	@media #{$brk-narrow} {
+	@include tablet {
 		display: none;
 	}
 }

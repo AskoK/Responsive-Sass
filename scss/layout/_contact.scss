@@ -40,11 +40,11 @@
 }
 
 .contact-page li {
-	@media #{$brk-narrow} {
-		font-size: 1em;
+	@include tablet {
+		font-size: $font-size-1em;
 	}
 
-	@media #{$brk-wide} {
-		font-size: .9em;
+	@include desktop {
+		font-size: $font-size-09em;
 	}
 }

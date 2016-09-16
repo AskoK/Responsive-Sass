@@ -12,11 +12,11 @@ img {
 	margin-top: 40px;
 	padding-bottom: 35px;
 
-	@media #{$brk-narrow} {
+	@include tablet {
 		padding-bottom: 35px;
 	}
 
-	@media #{$brk-wide} {
+	@include desktop {
 		margin-left: 30px;
 		margin-right: 30px;
 		padding-bottom: 35px;
@@ -24,7 +24,7 @@ img {
 }
 
 .container {
-	@media #{$brk-narrow} {
+	@include tablet {
 		overflow: auto;
 	}
 } 
@@ -38,20 +38,20 @@ img {
 
 
 #gallery li {
-  	float: left;
+  	@extend %flotleft;
   	width: 95%;
   	margin-top: 20px;
   	display: block;
   	margin-right: 2.5%; 
   	margin-left: 2.5%;
 
-  	@media #{$brk-narrow} {
+  	@include tablet {
 		width: 45%;
 		margin-right: 2.5%;
 		margin-left: 2.5%;
 	}
 
-	@media #{$brk-wide} {
+	@include desktop {
 		width: 28.333%;
 	}
 }

@@ -23,13 +23,14 @@ $stack-helvetica      : Helvetica;
 // Font size
 
 $font-size-1-5em     : 1.5em;
+$font-size-1-1em     : 1.1em;
 $font-size-1em       : 1em;
 $font-size-09em      : .9em;
 $font-size-08em      : .8em;
 $font-size-075em     : .75em;
 
+// Line height
 
-// Media query breakpoints
+$l-height-1-5        : 1.5em;
 
-$brk-narrow  : '(min-width: 768px)'; 
-$brk-wide    : '(min-width: 1024px)';
+
